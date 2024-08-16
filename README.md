@@ -1,2 +1,2 @@
 # Docker
-![image](https://github.com/user-attachments/assets/a76b6a60-b975-4c35-92d0-93404cef5e92)
+![image](https://github.com/user-attachments/assets/39786a03-36eb-4bd0-aa43-d3bb9598fcb0)
