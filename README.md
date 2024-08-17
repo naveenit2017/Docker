@@ -72,15 +72,17 @@ Scalability: Docker makes it easier to scale applications by allowing multiple c
 Isolation: Containers provide process and file system isolation, which enhances security by keeping applications separated.
 
 What is a container ?
+---------------------
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 Ok, let me make it easy !!!
 
 A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
+![image](https://github.com/user-attachments/assets/794b5264-9b01-4975-b7bc-9c6fca4db701)
 
-Screenshot 2023-02-07 at 7 18 10 PM
 
-Containers vs Virtual Machine
+Containers vs Virtual Machine:
+------------------------------
 Containers and virtual machines are both technologies used to isolate applications and their dependencies, but they have some key differences:
 
 1. Resource Utilization: Containers share the host operating system kernel, making them lighter and faster than VMs. VMs have a full-fledged OS and hypervisor, making them more resource-intensive.
@@ -90,13 +92,13 @@ Containers and virtual machines are both technologies used to isolate applicatio
 3. Security: VMs provide a higher level of security as each VM has its own operating system and can be isolated from the host and other VMs. Containers provide less isolation, as they share the host operating system.
 Management: Managing containers is typically easier than managing VMs, as containers are designed to be lightweight and fast-moving.
 Why are containers light weight ?
+---------------------------------
 Containers are lightweight because they use a technology called containerization, which allows them to share the host operating system's kernel and libraries, while still providing isolation for the application and its dependencies. This results in a smaller footprint compared to traditional virtual machines, as the containers do not need to include a full operating system. Additionally, Docker containers are designed to be minimal, only including what is necessary for the application to run, further reducing their size.
 
 Let's try to understand this with an example:
-
+---------------------------------------------
 Below is the screenshot of official ubuntu base image which you can use for your container. It's just ~ 22 MB, isn't it very small ? on a contrary if you look at official ubuntu VM image it will be close to ~ 2.3 GB. So the container base image is almost 100 times less than VM image.
-
-Screenshot 2023-02-08 at 3 12 38 PM
+![image](https://github.com/user-attachments/assets/bdd3c993-789b-4e6f-bdc0-5c770603eaae)
 
 To provide a better picture of files and folders that containers base images have and files and folders that containers use from host operating system (not 100 percent accurate -> varies from base image to base image). Refer below.
 
@@ -135,12 +137,14 @@ I hope it is now very clear why containers are light weight in nature.
 
 Docker
 What is Docker ?
+----------------
 Docker is a containerization platform that provides easy way to containerize your applications, which means, using Docker you can build container images, run the images to create containers and also push these containers to container regestries such as DockerHub, Quay.io and so on.
 
 In simple words, you can understand as containerization is a concept or technology and Docker Implements Containerization.
 
 Docker Architecture ?
-image
+---------------------
+![image](https://github.com/user-attachments/assets/0fa7fee1-b3b3-4e4e-b3c5-871cd4d7b413)
 
 The above picture, clearly indicates that Docker Deamon is brain of Docker. If Docker Deamon is killed, stops working for some reasons, Docker is brain dead :p (sarcasm intended).
 
@@ -152,7 +156,8 @@ There are three important things,
 docker build -> builds docker images from Dockerfile
 docker run -> runs container from docker images
 docker push -> push the container image to public/private regestries to share the docker images.
-Screenshot 2023-02-08 at 4 32 13 PM
+
+![image](https://github.com/user-attachments/assets/7def3325-967e-46b9-b68d-e9cca73c6527)
 
 Understanding the terminology (Inspired from Docker Docs)
 Docker daemon
@@ -302,6 +307,14 @@ b8088c305a52: Pushed
 69dd4ccec1a0: Pushed
 c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
+===============================================================================
+
+#Multistage Docker Containers:-
+#Distro less images
+#Docker Network
+#Docker bind mounts 
+#Docker volumes.
+
 
 
 
