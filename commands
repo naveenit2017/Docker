@@ -1,0 +1,5 @@
+docker build -t naveenvarma17/first-repo .
+docker run -it naveenvarma17/first-repo
+docker push naveenvarma17/first-repo
+docker images
+docker ps
