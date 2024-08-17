@@ -39,6 +39,7 @@ Images:-
 Docker containers are created from Docker images. An image is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software. 
 It’s essentially a snapshot of a container.
 Images are built from a Dockerfile, which contains instructions on how to construct the image.
+
 Dockerfile:-
 -------------
 A Dockerfile is a script containing a series of commands used to build a Docker image. These commands specify how to set up the environment in the container, 
