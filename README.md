@@ -74,14 +74,25 @@ While not part of Docker, Kubernetes is often used in conjunction with Docker fo
 
 Benefits of Docker:-
 --------------------
-Consistency Across Environments: Docker ensures that an application will run the same way in development, testing, and production because the container encapsulates all dependencies.
+Consistency Across Environments:
+--------------------------------
+Docker ensures that an application will run the same way in development, testing, and production because the container encapsulates all dependencies.
 
-Efficiency: Containers are more lightweight than virtual machines (VMs) because they share the host system's kernel, reducing the overhead.
+Efficiency:
+-----------
+Containers are more lightweight than virtual machines (VMs) because they share the host system's kernel, reducing the overhead.
 
-Portability: Docker containers can run on any system that supports Docker, making it easy to move applications between different environments.
-Scalability: Docker makes it easier to scale applications by allowing multiple containers to run across different nodes in a cluster.
+Portability:
+------------
+Docker containers can run on any system that supports Docker, making it easy to move applications between different environments.
 
-Isolation: Containers provide process and file system isolation, which enhances security by keeping applications separated.
+Scalability:
+------------
+Docker makes it easier to scale applications by allowing multiple containers to run across different nodes in a cluster.
+
+Isolation:
+----------
+Containers provide process and file system isolation, which enhances security by keeping applications separated.
 
 What is a container ?
 ---------------------
