@@ -8,7 +8,7 @@ If we are using this apporach somany resources are wasted not using fully resour
 If a application need 10000 VMs this case more cpu,memory,hdd wastage and very expensive.
 That is the case the term called container has implemented.
 --VM has the fully OS
---Containers not fully OS and it can use the Host OS.
+--Containers not fully OS and it can use the Host OS resources.
 
 Docker Container is very light weight it will use the base image it consist of Packages,libraries,application,system dependences if required any some other resources
 It will use the base OS resources.
