@@ -18,6 +18,7 @@ LIfecycle of Docker:
 To create conatiner,Will write a Dockerfile and will give the Dockerfile to Docker Environment or Engine it will convert into Docker image,We can convert this image into container.
 
 Dockerfile---->DockerHost---->DockerImage--->Container.
+
 Drawback:
 --------
 Docker container will be dependent on Docker engine,but it is SPOF(Single point of failure),that time it will create problem for the customers.
